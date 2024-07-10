@@ -2,6 +2,7 @@ import requests
 import subprocess
 import os
 import sys
+import time
 
 # URL of the raw script on GitHub
 SCRIPT_URL = 'https://raw.githubusercontent.com/Wimfish1/PyTests/main/main.py'
@@ -35,5 +36,10 @@ def restart_program():
     os.execl(python, python, *sys.argv)
 
 if __name__ == '__main__':
+    print("---------------------------")
+    print("Awaiting boot...")
+    print("---------------------------")
+    time.sleep(0.2)
+    print("Checking for updates...")
     check_for_updates()
-    print('Hello, this is the main script!')
+    print("Boot Finished.")
