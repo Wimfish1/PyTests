@@ -1,10 +1,11 @@
 import requests
 import subprocess
 import os
+import sys
 
 # URL of the raw script on GitHub
-SCRIPT_URL = 'https://raw.githubusercontent.com/yourusername/yourrepository/main/your_script.py'
-LOCAL_FILE = 'your_script.py'
+SCRIPT_URL = 'https://raw.githubusercontent.com/Wimfish1/PyTests/main/main.py'
+LOCAL_FILE = 'main.py'
 
 def check_for_updates():
     try:
