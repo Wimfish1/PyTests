@@ -29,6 +29,8 @@ def check_for_updates():
             print('Update completed. Restarting...')
             time.sleep(2)
             restart_program()
+        if remote_script == local_script:
+            print("No updates found. Resuming boot sequence")
 
     except Exception as e:
         print(f'Error checking for updates: {e}')
